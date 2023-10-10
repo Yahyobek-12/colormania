@@ -1,0 +1,35 @@
+@media screen and (max-width: 430px) {
+    body {
+        padding: 20px 20px;
+    }
+
+    header {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .result-1 {
+        font-size: 15px;
+    }
+
+    .result-2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .logo {
+         display: none;
+    }
+        
+    .result-1 {
+        font-size: 12px;
+    }
+
+    .result-2 {
+        font-size: 12px;
+    }
+}

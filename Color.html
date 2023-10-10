@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Color.css">
+    <link rel="stylesheet" href="./media.css">
+    <title>Color-Mania Tutorial</title>
+</head>
+<body>
+    
+    <div class="container" id="container">
+
+        <header>
+            <div class="logo-box">
+                <div class="logo"></div>
+                <h5 class="logo-text">ColorMania</h5>
+            </div>
+            <div class="remove-box">
+                <span>New</span>
+            </div>
+        </header>
+        
+        <main>
+            <div class="color-box-1" id="color-1"></div>
+            <div class="color-box-2" id="color-2">
+            </div>
+        </main>
+
+        <form id="myForm">
+            <div class="input-box-1">
+                <input type="text" class="inp-1" placeholder="Write A Color...">
+                <button class="setBtn" type="submit" id="Go-1">Go</button>
+            </div>
+            <div class="input-box-2">
+                <input type="color" class="inp-2" id="inp-1">
+                <button class="setBtn" type="submit" id="Go-2">Go</button>
+            </div>
+        </form>
+
+        <footer>
+            <div class="result-1">
+                <h2 id="result-1">No Write Color...</h2>
+            </div>
+            <div class="result-2">
+                <h2 id="result-2">No Select Color...</h2>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Script link -->
+    <script src="./Setting.js"></script>
+    <script src="./Color.js"></script>
+    <script src="./Color-2.js"></script>
+</body>
+</html>

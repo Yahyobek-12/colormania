@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #2970ff, #00ccff, #00ffae);
+}
+
+.menus {
+    top: 20px;
+    left: 82rem;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    position: absolute;
+    border-radius: 5px;
+    background: #121519;
+}
+
+.container {
+    width: 480px;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #eee;
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.3);
+}
+
+header {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+
+.logo-box {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(#f00, #ffa500, #ff0, green, blue);
+}
+
+.logo-text {
+    color: #555;
+}
+
+.remove-box {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    color: #555;
+    padding: 15px 15px;
+    border-radius: 5px;
+    align-items: center;
+    background: #fff;
+    justify-content: center;
+    text-transform: lowercase;
+}
+
+main {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.color-box-1 {
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-right: 1px solid #eee;
+}
+
+.color-box-2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 30px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-box-1 {
+    width: 50%;
+    height: 100%;
+}
+
+.inp-1 {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    background: #fff;
+    border-right: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
+
+.setBtn {
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    background: #212529;
+    border-left: 1px solid #eee;
+}
+
+.setBtn:active {
+    margin-top: .5rem;
+}
+
+.input-box-2 {
+    width: 50%;
+    height: 100%;
+}
+
+.inp-2 {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+
+footer {
+    width: 100%;
+    height: 139px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    justify-content: space-around;
+}
+
+.result-1 {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    border-right: 1px solid #eee;
+    justify-content: center;
+}
+
+.result-2 {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    justify-content: center;
+}
+
+/* New Window */
+
+.new-window {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s;
+    margin-top: -150%;
+    position: absolute;
+    background: #0009;
+}
+
+.new-window.new-window-active {
+    margin-top: 0;
+    transition: 1s;
+}
+
+#remove {
+    top: 20px;
+    left: 82rem;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 12px;
+    border-radius: 5px;
+    position: absolute;
+    background: crimson;
+}
+
+.row {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    padding: 20px;
+    margin-top: 0;
+    justify-content: space-around;
+}
+
+.choose-color {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.click-color {
+    width: 100%;
+    height: 65%;
+    cursor: pointer;
+    background: #ffa500;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.click-color:active {
+    transform: scale(95%);
+}
+
+.choose-color p {
+    color: #fff;
+    padding: 10px;
+    margin-top: 0.5rem;
+    background: #ffa500;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.setting-box {
+    top: 37rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    left: 81.5rem;
+    cursor: pointer;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 50%;
+    align-items: center;
+    position: absolute;
+    background: #121519;
+    justify-content: center;
+}
+
+/* All Coloe */
+
+.all-color {
+    top: 5rem;
+    width: 40px;
+    height: 1%;
+    left: 100rem;
+    transition: 0.5s;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.all-color.all-color-active {
+    left: 81.9rem;
+    transition: 0.5s;
+}
+
+.all-color.all-color.all-color-active-2 {
+    height: 70%;
+    transition: 1s;
+}
+
+.color-1 {
+    width: 100%;
+    height: 8%;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #ffa500;
+}
+
+.color-2 {
+    width: 100%;
+    height: 8%;
+    cursor: pointer;
+    background: #2970ff;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
+
+.color-3 {
+    width: 100%;
+    height: 8%;
+    cursor: pointer;
+    background: #90f;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
+
+.color-4 {
+    width: 100%;
+    height: 8%;
+    cursor: pointer;
+    background: #00ccff;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
+
+.color-5 {
+    width: 100%;
+    height: 8%;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    background: #00ff88;
+}
+
+.color-6 {
+    width: 100%;
+    height: 8%;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    background: crimson;
+}
+
+.active:active {
+    transform: scale(90%);
+}
